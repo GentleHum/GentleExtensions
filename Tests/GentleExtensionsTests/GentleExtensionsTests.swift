@@ -6,7 +6,10 @@ final class GentleExtensionsTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(GentleExtensions().text, "Hello, World!")
-        XCTAssertNotNil(GentleExtensions().url)
+        let extensions = GentleExtensions()
+        XCTAssertEqual(extensions.text, "Hello, World!")
+        XCTAssertNotNil(extensions.url)
+        XCTAssertNotNil(extensions.extensionsUrl)
+        XCTAssertNotEqual(extensions.url, extensions.extensionsUrl)
     }
 }
