@@ -5,14 +5,18 @@ public struct GentleExtensions {
     public private(set) var url: URL?
     public private(set) var extensionsUrl: URL?
     public private(set) var storyboard: UIStoryboard?
+    public private(set) var viewController: UIViewController?
 
     public init() {
         url = Bundle.module.url(forResource: "GentleMetadata", withExtension: "json")
-        print("GentleExtension: url: \(String(describing: url))")
+        print("GentleExtensions: url: \(String(describing: url))")
         extensionsUrl = Bundle.module.url(forResource: "GentleExtensionsMetadata", withExtension: "json")
-        print("GentleExtension: extensionsUrl: \(String(describing: extensionsUrl))")
+        print("GentleExtensions: extensionsUrl: \(String(describing: extensionsUrl))")
         
         storyboard = UIStoryboard(name: "GentleExtensions", bundle: Bundle.module)
-        print("GentleExtension: storyboard: \(String(describing: storyboard))")
+        print("GentleExtensions: storyboard: \(String(describing: storyboard))")
+        
+        viewController = storyboard?.instantiateViewController(withIdentifier: "GentleExtensions")
+        print("GentleExtensions: viewController: \(String(describing: viewController))")
     }
 }
