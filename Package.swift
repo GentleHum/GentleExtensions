@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "GentleExtensions",
             dependencies: [],
-            resources: [.process("Resources/GentleMetadata.json")]
+            resources: [.copy("Resources/GentleMetadata.json")]
         ),
         .testTarget(
             name: "GentleExtensionsTests",
