@@ -1,2 +1,2 @@
 # GentleExtensions
-Common Extenstions used in my apps.
+Common Extensions used in my apps.
