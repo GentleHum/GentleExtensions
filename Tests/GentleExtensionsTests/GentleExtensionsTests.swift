@@ -11,5 +11,6 @@ final class GentleExtensionsTests: XCTestCase {
         XCTAssertNotNil(extensions.url)
         XCTAssertNotNil(extensions.extensionsUrl)
         XCTAssertNotEqual(extensions.url, extensions.extensionsUrl)
+        XCTAssertNotNil(extensions.storyboard)
     }
 }
