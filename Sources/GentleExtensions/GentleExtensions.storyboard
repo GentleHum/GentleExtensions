@@ -23,9 +23,8 @@
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sJ-bE-9Ia">
-                                <rect key="frame" x="127" y="502" width="141" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sJ-bE-9Ia">
+                                <rect key="frame" x="136.5" y="501" width="141" height="43"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show More">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
@@ -39,7 +38,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aA3-H5-pER" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="hFW-cx-kGL"/>
+                            <constraint firstItem="3sJ-bE-9Ia" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hfh-8v-kQ6"/>
                             <constraint firstItem="aA3-H5-pER" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="j4T-yd-Zqr"/>
+                            <constraint firstItem="3sJ-bE-9Ia" firstAttribute="top" secondItem="aA3-H5-pER" secondAttribute="bottom" constant="40" id="jzH-rP-Amm"/>
                         </constraints>
                     </view>
                 </viewController>
