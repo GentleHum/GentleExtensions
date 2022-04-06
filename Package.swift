@@ -22,8 +22,7 @@ let package = Package(
             name: "GentleExtensions",
             dependencies: [],
             resources: [
-                .process("Resources")  // ,
-//                .copy("GentleExtensions.storyboard")
+                .process("Resources")
             ]
         ),
         .testTarget(
