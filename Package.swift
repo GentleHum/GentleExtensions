@@ -22,7 +22,7 @@ let package = Package(
             name: "GentleExtensions",
             dependencies: [],
             resources: [
-//                .process("Resources")  // ,
+                .process("Resources")  // ,
 //                .copy("GentleExtensions.storyboard")
             ]
         ),
